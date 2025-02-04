@@ -1,0 +1,86 @@
+/* comentário no CSS*/
+body {
+    margin-bottom: 1000px;
+}
+/*p {
+    color: red;
+}
+
+/* 3 - seletores básicos */
+/* 
+
+    seletor de tag => tag => especifidade 1
+    seletor de classe => . => especifidade 2
+    seletor de id => # => especifidade 3
+
+*/
+h4 {
+    font-size: 20px;
+    color: blueviolet;
+}
+
+.titulo {
+    color: purple;
+    font-size: 40px;
+}
+
+#paragrafo-especial {
+    font-size: 30px;
+    color: #000;
+    font-style: oblique;
+}
+
+
+/* 4 - propriedades de texto */
+
+.basic-text {
+    font-family: Arial, sans-serif;
+    color: #6669a1;
+}
+
+.styled-text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #0e7c22;
+    font-size: 24px;
+}
+
+.weighty-text {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.fancy-text {
+    font-family: Verdana;
+    font-size: 25px;
+    color: #123456;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* 5 - CORES */
+
+/* 99% dos casos é usado o HEX (hexadecimal) */
+/* 1% das vezes é usado o RGBA */
+
+.hex-color {
+    /* 6 algarismos, precedidos por #, A-F 0-9*/
+    /* F  -> mais claro, 0 -> mais escuro */
+    color: #ff6310;
+}
+
+.rgb-color {
+    /* Red, Green, Blue */
+    /* 0 -> mais escuro, 255 -> mais claro */
+    color: rgb(123, 60, 160);
+}
+
+.hsl-color {
+    /* hue, saturation, lightness*/
+    color: hsl(7, 76%, 46%);
+}
+
+.rgba-color {
+    /* 0 => invisível, 1 => totalmente visível*/
+    background-color: rgba(123, 60, 160, .2);
+}
