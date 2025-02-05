@@ -82,5 +82,161 @@ h4 {
 
 .rgba-color {
     /* 0 => invisível, 1 => totalmente visível*/
-    background-color: rgba(123, 60, 160, .2);
+    background-color: rgba(123, 60, 160, 1);
+}
+
+
+/* estlização de links */
+
+
+.simple-link {
+    text-decoration: none;
+    color: rgb(21, 235, 57);
+}
+
+.fancy-link {
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.hover-link {
+    text-decoration: none;
+
+}
+/* hover: evento de quando o usuário passa o mouse no elemento*/
+.hover-link:hover {
+    text-decoration: underline;
+    color: #ff6310;
+}
+
+.bold-link {
+    font-weight: 600;
+}
+
+
+/* 7 - Box model */
+
+
+.width-height {
+    width: 200px;
+    height: 80px;
+    border: 2px solid #123;
+    text-align: center;
+    background-color: #0e7c22;
+}
+
+/* padding --> espaçamento interno, que pode ser adicionado aos 4 cantos*/
+.padding-example {
+    width: 200px;
+    height: 80px;
+    border: 2px solid #123;
+    background-color: #4729b4;
+    padding-top: 30px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+/* Margem = espaçamento externo */
+.margin-example {
+    width: 200px;
+    height: 80px;
+    border: 2px solid #123;
+    margin: 30px;
+}
+
+.complete-example {
+    width: 200px;
+    height: 80px;
+    border: 2px solid #123;
+    padding: 50px 100px;
+    margin: 10px 20px 30px 40px;
+}
+
+
+/* 8 - Positions */
+
+.static-example {
+    position: static;
+    background-color: blue;
+    border: 1px solid #fa0707;
+}
+
+.relative-example {
+    position: relative;
+    top: 40px;
+    left: 50px;
+    background-color: gold;
+}
+
+.absolute-example {
+    position: absolute;
+    background-color: aqua;
+    top: 10px;
+    left: 250px;
+}
+
+.fixed-example {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: yellow;
+    border: 2px solid #000;
+}
+
+.sticky-example {
+    position: sticky;
+    top: 0;
+    background-color: rgb(248, 8, 128);
+    border: 2px solid #000;
+}
+
+/* Absolute precisa de um pai relativo */
+.relative-container {
+    margin-top: 300px;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #123;
+    position: relative;
+}
+.absolute-inside-relative {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: chartreuse;
+}
+
+
+/* 9 - Flexbox */
+
+
+.flex-container {
+    display: flex;
+    border: 2px solid #000;
+    padding: 10px;
+    height: 300px;
+}
+
+.flex-item {
+    width: 100px;
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.flex-container {
+    justify-content: flex-end;
+}
+
+.flex-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    flex: 1;
+}
+
+.flex-container {
+    flex-direction: column;
 }

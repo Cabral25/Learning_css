@@ -1,0 +1,11 @@
+/* o background-color adiciona cor no background */
+.ola {
+    background-color: aqua;
+}
+#oi {
+    background-color: blue;
+}
+
+p {
+    background-color: green;
+}
