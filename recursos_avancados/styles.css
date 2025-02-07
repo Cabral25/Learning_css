@@ -1,0 +1,135 @@
+html {
+    font-size: 15px;
+    margin-bottom: 1000px;
+}
+
+
+/* 1 - Estilos de listas */
+
+
+.lista-pontos {
+    list-style-type: square;
+}
+
+.lista-numerica {
+    list-style-type: lower-roman;
+}
+
+.lista-imagem {
+    list-style-type: none;
+    list-style-image: url("img/circle.png");
+}
+
+
+/* 2 - Unidades de medida */
+
+
+.container {
+    width: 80%;
+    border: 1px solid #678;
+    font-size: 15px;
+}
+
+.pixel-box {
+    width: 200px;
+    height: 50px;
+    border: 2px solid #9b4444;
+}
+
+.percent-box {
+    width: 50%;
+    height: 100px;
+    border: 2px solid green;
+    margin: 2px;
+}
+
+/* em -> 2x o tamanho de fonte do elemento pai(container(15px)) */
+.em-text {
+    font-size: 2em;
+}
+
+/* rem -> fonte controlada pelo root element(html(15px)) */
+.rem-text {
+    font-size: 2rem;
+}
+
+
+/* 3 - Pseudo classes */
+
+
+.styled-list {
+    list-style-type: none;
+}
+
+.styled-list li:first-child {
+    color: red;
+}
+
+.styled-list li:last-child {
+    color: rgb(74, 167, 31);
+}
+
+.styled-list li::before {
+    content: "* ";
+}
+
+.hover-box {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(128, 158, 103);
+    transition: .5s;
+}
+
+.hover-box:hover {
+    background-color: aqua;
+    cursor: grab;
+    transform: scale(1.1);
+}
+
+
+/* 4 - Degradê */
+
+.linear-gradient-box, 
+.radial-gradient-box, 
+.multiple-gradients-box {
+    height: 200px;
+}
+
+.linear-gradient-box {
+    background-image: linear-gradient(to right, #123, #235, #456, #890);
+}
+
+.radial-gradient-box {
+    background-image: radial-gradient(circle, red, orange, yellow);
+}
+
+.multiple-gradients-box {
+    background-image: linear-gradient(to left, 
+    rgba(80, 150, 155, .7),
+    rgba(120, 220, 255, 0)), 
+    radial-gradient(circle at top, red, orange);
+}
+
+
+/* 5 - Text shadow e box shadow */
+
+
+.box-shadow-example {
+    width: 300px;
+    height: 100px;
+    background-color: #f0f0f0;
+    box-shadow: 10px 10px 20px #0f0202;
+}
+
+.text-shadow-example {
+    font-size: 30px;
+    color: #0a0707;
+    text-shadow: 4px 4px 5px;
+}
+
+.multiple-shadow-box {
+    width: 300px;
+    height: 100px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 
+    -3px -3px 5px rgba(175, 8, 8, 0.5);
+}
