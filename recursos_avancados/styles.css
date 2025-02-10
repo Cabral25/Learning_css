@@ -26,20 +26,20 @@ html {
 
 .container {
     width: 80%;
-    border: 1px solid #678;
+    border: 1px solid rgb(24, 218, 56);
     font-size: 15px;
 }
 
 .pixel-box {
     width: 200px;
     height: 50px;
-    border: 2px solid #9b4444;
+    border: 2px solid #4d1ece;
 }
 
 .percent-box {
     width: 50%;
     height: 100px;
-    border: 2px solid green;
+    border: 2px solid rgb(212, 39, 16);
     margin: 2px;
 }
 
@@ -74,9 +74,12 @@ html {
 }
 
 .hover-box {
+    text-align: center;
+    padding-top: 10px;
+    margin: 5px;
     width: 100px;
     height: 100px;
-    background-color: rgb(128, 158, 103);
+    background-color: rgb(233, 236, 20);
     transition: .5s;
 }
 
@@ -84,6 +87,7 @@ html {
     background-color: aqua;
     cursor: grab;
     transform: scale(1.1);
+    border-radius: 20%;
 }
 
 
@@ -96,6 +100,7 @@ html {
 }
 
 .linear-gradient-box {
+    color: #28eb21;
     background-image: linear-gradient(to right, #123, #235, #456, #890);
 }
 
@@ -117,7 +122,7 @@ html {
 .box-shadow-example {
     width: 300px;
     height: 100px;
-    background-color: #f0f0f0;
+    background-color: #f0f0f1;
     box-shadow: 10px 10px 20px #0f0202;
 }
 
@@ -132,4 +137,109 @@ html {
     height: 100px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3), 
     -3px -3px 5px rgba(175, 8, 8, 0.5);
+}
+
+
+/* 6 - Z index */
+
+
+.z-index-box {
+    position: relative;
+    height: 300px;
+    border: 1px solid #000;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    border: 1px solid black;
+}
+
+.background {
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+    background-color: blue;
+}
+
+.middle {
+    top: 40px;
+    left: 40px;
+    z-index: 2;
+    background-color: green;
+}
+
+.foreground {
+    top: 60px;
+    left: 60px;
+    z-index: 3;
+    background-color: red;
+}
+
+
+/* 7 - Variáveis */
+
+
+:root {
+    --main-color: #1e5fda;
+    --padding-value: 5px;
+    --text-color: #fff;
+    --margin: 2px;
+    --text-shadow: 2px 2px 2px;
+}
+
+.content {
+    padding: var(--padding-value);
+}
+
+.text {
+    color: var(--main-color);
+    text-shadow: var(--text-shadow);
+}
+
+
+/* 8 - Grid */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-container div {
+    background-color: red;
+}
+
+/* Grid Areas */
+
+.grid-container-area {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: auto 1fr auto;
+    grid-gap: 5px;
+    height: 100vh;
+}
+
+header {
+    grid-column: 1 / -1;  /* Pra ocupar toda a largura da tela */
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+.aside {
+    grid-column: 1;
+    grid-row: 2;
+    background-color: red;
+}
+
+.main-content {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: green;
+}
+
+.footer {
+    grid-column: 1 / -1;
+    background-color: #ccc;
 }

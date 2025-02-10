@@ -1,0 +1,22 @@
+html {
+    background-color: #f0f0f0;
+}
+
+header {
+    background-color: #333;
+    padding: 10px;
+    border: 1px solid black;
+    height: 200px;
+    text-align: center;
+    font-size: 20px;
+    background-image: linear-gradient(to left, red, blue);
+}
+
+header li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+header li:hover {
+    cursor: grab;
+}
