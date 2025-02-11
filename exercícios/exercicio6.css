@@ -1,22 +1,67 @@
-html {
-    background-color: #f0f0f0;
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
 }
 
 header {
     background-color: #333;
-    padding: 10px;
-    border: 1px solid black;
-    height: 200px;
+    color: #fff;
+    padding: 20px 15px 10px 5px; /* ou padding-top, padding-right,etc */
     text-align: center;
-    font-size: 20px;
-    background-image: linear-gradient(to left, red, blue);
 }
 
-header li {
+header h1 {
+    margin-bottom: 10px;
+}
+
+nav ul {
     list-style-type: none;
-    text-decoration: none;
 }
 
-header li:hover {
-    cursor: grab;
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+article {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+article h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+article p {
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }

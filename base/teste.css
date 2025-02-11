@@ -1,0 +1,46 @@
+body {
+    background-color: #ddd;
+    margin: 20px;
+    padding-bottom: 700px;
+    padding-top: 700px;
+}
+
+body div {
+    border: 1px solid #fff;
+    text-align: center;
+    padding-bottom: 200px;
+}
+
+.static {
+    position: static;
+    top: 20px;
+    left: 20px;
+}
+
+.fixed {
+    position: fixed;
+    top: 0;
+    padding-bottom: 80px;
+    width: 100%;
+}
+
+
+.sticky {
+    position: sticky;
+    top: 0;
+    background: rgb(197, 33, 33);
+}
+
+.relative {  /* move o elemento sem afetar os outros */
+    position: relative;  /* Define um pai */
+    top: 20px;
+    left: 20px;
+    background-color: green;
+}
+
+.absolute {  /* sai do fluxo normal e se posiciona em relação ao pai */
+    position: absolute;  /* se não houver um pai com relative, absolute será posicionado em relação ao body */
+    top: 50px;  /* 50px do topo do pai */
+    left: 50px;  /* 50px da esquerda do pai */
+    background: tomato;
+}
